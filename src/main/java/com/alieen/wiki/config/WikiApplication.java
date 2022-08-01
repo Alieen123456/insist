@@ -1,11 +1,14 @@
-package com.alieen.wiki;
+package com.alieen.wiki.config;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//@ComponentScan({"com.alieen","com.test"})
+@ComponentScan("com.alieen")   //用来扫描的注解
 @SpringBootApplication
 public class WikiApplication {
     private static final Logger LOG = LoggerFactory.getLogger(WikiApplication.class);
